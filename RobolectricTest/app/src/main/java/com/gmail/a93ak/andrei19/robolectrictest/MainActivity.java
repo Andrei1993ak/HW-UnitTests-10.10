@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         visibilitySetter = new SetterButtonVisibility();
     }
 
-    public void setButtonVisible() {
+    public void setButtonVisibility() {
         if(visibilitySetter.isButtonVisible())
             button.setVisibility(View.VISIBLE);
         else

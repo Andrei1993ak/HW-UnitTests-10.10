@@ -27,14 +27,14 @@ public class ButtonVisibilityTest {
     @Test
     public void checkForButtonVisible() {
         Mockito.when(activity.visibilitySetter.isButtonVisible()).thenReturn(true);
-        activity.setButtonVisible();
+        activity.setButtonVisibility();
         assertEquals(Button.VISIBLE, button.getVisibility());
     }
 
     @Test
     public void checkForButtonInvisible() {
         Mockito.when(activity.visibilitySetter.isButtonVisible()).thenReturn(false);
-        activity.setButtonVisible();
+        activity.setButtonVisibility();
         assertEquals(Button.INVISIBLE, button.getVisibility());
     }
 }
